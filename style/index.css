@@ -1,4 +1,5 @@
 @import url(./variables.css);
+@import url(./font.css);
 
 /* Start Default Style */
 html {
@@ -9,6 +10,7 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   font-family: var(--primary-font);
+  direction: rtl;
 }
 
 *,
@@ -24,3 +26,39 @@ a {
 }
 
 /* Finish Default Style */
+
+.topbar {
+  padding: 5px;
+  background: var(--color-text-secondary);
+}
+.topbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.tapbar__menu {
+  display: flex;
+  gap: 20px;
+}
+.topbar__link,
+.tapbar__link {
+  color: var(--color-button-text);
+}
+.topbar__left {
+  display: flex;
+  gap: 10px;
+}
+.tapbar__email,
+.tapbar__phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tapbar__email-icon,
+.tapbar__phone-icon {
+  color: var(--color-text-muted);
+}
+
